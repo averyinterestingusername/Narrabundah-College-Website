@@ -12,4 +12,4 @@ The Home webpage also contains an animation of the college logo and an iFrame, w
 
 You can also switch the CSS styling if you prefer another one.
 
-* _I_ think it looks good.
+### * _I_ think it looks good.
