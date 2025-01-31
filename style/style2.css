@@ -1,0 +1,138 @@
+/*  */
+
+/*Author: B0redChungus*/
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  text-align: center;
+}
+
+body {
+  background-color: #222;
+  color: #ffcc33;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffcc33;
+}
+
+.standout {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.button {
+  padding: 30px 20%;
+  background-color: #ffcc33;
+  color: red;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: red;
+  color: #ffcc33;
+}
+
+#buttontable {
+  width: 100%;
+  height: 100px;
+}
+
+.buttoncell {
+  width: 10%;
+  height: 90px;
+}
+
+#buttoncell {
+  width: 20%;
+  height: 80px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ffcc33;
+  margin: 20px 0;
+}
+
+.smallhr {
+  height: 2px;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.pagetable {
+  width: 100%;
+}
+
+.pagecell {
+  width: 50%;
+}
+
+.topalign {
+  vertical-align: top;
+}
+
+.centrealign {
+  text-align: center;
+}
+
+.divmargin {
+  margin: 20px;
+}
+
+h1, h3, p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.divweakmargin {
+  margin: 20px 40px;
+}
+
+.divmargintopsmall {
+  margin-top: 15px;
+}
+
+.iframeframe {
+  width: 750px;
+  height: 500px;
+}
+
+iframe {
+  border: none;
+  border-radius: 15px;
+}
+
+.iframepic {
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ffcc33;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

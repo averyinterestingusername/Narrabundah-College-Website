@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+    <form method="post">
+        <h1>Hello, this is a survey about my website. Please offer some constructive criticism so that I may improve it.</h1>
+
+        <p>Please give my website a rating of 0 to 10. <input type="number" name="rating" min="0" max="10" required="required"></p>
+
+        <p>Please enter your reason for this rating (optional). <input type="text" name="reason"></p>
+        
+        <p>Please tell me whether you consider functionality or aesthetics more important.</p>
+        <input type="radio" name="importance" value="Functionality">Functionality<br>
+        <input type="radio" name="importance" value="Aesthetics">Aesthetics<br>
+
+        <p>Please select all that apply.</p>
+        <ol>
+            <li><input type="checkbox" name="checkboxes[]" value="Something you agree with">Something you agree with<br></li>
+            <li><input type="checkbox" name="checkboxes[]" value="Something you disagree with">Something you disagree with<br></li>
+            <li><input type="checkbox" name="checkboxes[]" value="Something else you agree with">Something else you agree with<br></li>
+        </ol>
+
+        <p>Please tell me what you believe needs the most urgent attention at Narrabundah college. <input type="text" name="urgent_attention"></p>
+
+        <input type="submit"><br><br>
+    </form>
+</body>
+</html>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $rating = $_POST['rating'];
+    $reason = $_POST['reason'];
+    $importance = $_POST['importance'];
+    $checkboxes = isset($_POST['checkboxes']) ? implode(", ", $_POST['checkboxes']) : "";
+    $urgent_attention = $_POST['urgent_attention'];
+
+    // Construct the submission data
+    $submission = "Rating: $rating\n";
+    $submission .= "Reason: $reason\n";
+    $submission .= "Importance: $importance\n";
+    $submission .= "Selected checkboxes: $checkboxes\n";
+    $submission .= "Urgent attention: $urgent_attention\n\n";
+
+    // Store the submission in a file
+    $file = 'form_submissions.txt';
+    file_put_contents($file, $submission, FILE_APPEND);
+
+    // Optionally, you can redirect the user to a thank you page
+    // header("Location: thank_you.html");
+    // exit();
+}
+?>

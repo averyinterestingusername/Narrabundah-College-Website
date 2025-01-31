@@ -1,0 +1,69 @@
+<!--  -->
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+  <title>Narrabundah College Block A</title>
+
+  <meta charset="UTF-8">
+  <meta name="author" content="B0redChungus">
+
+  <link id="style" type="text/css" rel="stylesheet" href="style/dark.css" />
+
+  <script>
+    function SwitchCss() { 
+        var CSS = document.getElementsByTagName('link')[0]; 
+
+        if (style.getAttribute('href') == 'style/dark.css') { 
+            style.setAttribute('href', 'style/style2.css'); 
+        } else { 
+            style.setAttribute('href', 'style/dark.css'); 
+        } 
+      }
+    </script>
+
+</head>
+
+<body>
+  <header>
+    <img src="images/crappiestiest_banner.png" width="100%">
+  </header>
+
+  <table id="buttontable">
+    <tr>
+      <td class="buttoncell"><a href="Home.html" class='button'>Home</a></td>
+      <td class="buttoncell"><a href="B_Block.html" class='button'>Block B</a></td>
+      <td class="buttoncell"><a href="C_Block.html" class='button'>Block C</a></td>
+      <td class="buttoncell"><a href="D_Block.html" class='button'>Block D</a></td>
+      <td class="buttoncell"><a href="E_Block.html" class='button'>Block E</a></td>
+      <td class="buttoncell"><a href="F_Block.html" class='button'>Block F</a></td>
+      <td class="buttoncell"><a href="L_Block.html" class='button'>Block L</a></td>
+      <td class="buttoncell"><a href="S_Block.html" class='button'>Block S</a></td>
+      <td id="buttoncell"><a onclick="SwitchCss()" class='button'>Switch CSS</a></td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <table class="pagetable">
+    <tr>
+      <td class="pagecell">
+
+      </td>
+      <td class="pagecell">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="pagecell">
+
+      </td>
+      <td class="pagecell">
+        
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

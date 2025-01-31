@@ -1,0 +1,200 @@
+<!--  -->
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+  <title>Narrabundah College Home</title>
+
+  <meta charset="UTF-8">
+  <meta name="B0redChungus" content="Narrabundah College">
+
+  <link id="style" rel="stylesheet" href="style/dark.css"/>
+
+  <script>
+    function SwitchCss() { 
+        var CSS = document.getElementsByTagName('link')[0]; 
+
+        if (style.getAttribute('href') == 'style/dark.css') { 
+            style.setAttribute('href', 'style/style2.css'); 
+        } else { 
+            style.setAttribute('href', 'style/dark.css'); 
+        } 
+      } 
+
+    function checkPassword() { 
+
+      // Prevent the form from submitting
+      event.preventDefault();
+
+      var passwordInput = document.getElementById("password");
+      var response = document.getElementById("response");
+  
+      if (passwordInput.value == "Ä") {
+        answer = "Wow. You're correct. I did not expect that. You don't actually get access to anything, but colour me impressed. (Although it seems unlikely you got this correct without even having the character 'ä' on your keyboard, so I'm going to assume you cheated, wherefore I'm no longer impressed.)";
+      } else {
+        answer = "Access denied.";
+      }
+  
+      response.textContent = answer;
+    }
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <img src="images/not_so_crappy_banner.png" width="100%" alt="A header for the webpage. Contains the Narrabundah College 2024 Logo. Sticks at the top of your screen.">
+  </header>
+
+  <table id="buttontable">
+    <tr>
+      <td class="buttoncell"><a href="A_Block.html" class='button'>Block A</a></td>
+      <td class="buttoncell"><a href="B_Block.html" class='button'>Block B</a></td>
+      <td class="buttoncell"><a href="C_Block.html" class='button'>Block C</a></td>
+      <td class="buttoncell"><a href="D_Block.html" class='button'>Block D</a></td>
+      <td class="buttoncell"><a href="E_Block.html" class='button'>Block E</a></td>
+      <td class="buttoncell"><a href="F_Block.html" class='button'>Block F</a></td>
+      <td class="buttoncell"><a href="L_Block.html" class='button'>Block L</a></td>
+      <td class="buttoncell"><a href="S_Block.html" class='button'>Block S</a></td>
+      <td id="buttoncell"><a onclick="SwitchCss()" class='button'>Switch CSS</a></td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <table>
+    <tr>
+      <td class="pagecell topalign">
+        <div class="divmargin">
+          <h1>What makes Narrabundah College so unique?</h1>
+
+          <p>Narrabundah College delivers a senior secondary curriculum to 950+ year 11 and 12 students. It is the school of choice for a significant number of our students locally, 
+            nationally and internationally. They choose to enrol for the programs we offer and for the positive, challenging and dynamic learning environment.</p>
+          
+          <p>Our diverse curriculum offerings sit under the ACT ATAR System, the International Baccalaureate and the French Baccalauréat.</p>
+
+          <p>Students are also able to choose from 
+            <ul>
+              <li>English</li>
+              <li>Mathematics</li>
+              <li>Science</li>
+              <li>Languages</li>
+              <li>History</li>
+              <li>Philosophy</li>
+              <li>Humanities</li>
+              <li>Social Sciences</li>
+              <li>Media</li>
+              <li>IT</li>
+              <li>Visual</li>
+              <li>and Performing Arts.</li>
+            </ul>
+          </p>
+
+          <p>We continue to challenge national trends in STEM and Languages. A third of our cohort select to study the highest level of Maths; while at least a half of our population 
+            elect to study at least one of our Science offerings of Physics, Chemistry, Biology, Environmental Systems, Forestry and Exercise Science. We offer nine languages at the 
+            college and we also have high engagement in language study with a third of our cohort electing to study at least one other language in their time at the college.</p>
+
+          <p>The college prides itself on providing a high level of student support to ensure that all students’ learning journeys are successful. Not only are students challenged 
+            and succeed academically, but they are also able to develop into caring global citizens who can and do make a difference to our world.</p>
+
+          <p>We also have a focus on students engaging in opportunities to develop their creativity, take action and give service in areas outside of academic classes. As part of 
+            their college journey, students embrace opportunities in leadership, health & well-being, volunteering, community connections and much more.</p>
+
+          <p>We create an environment where our students discover their interests, develop their skills and are provided with opportunities to excel socially, emotionally and 
+            academically.</p>
+        </div>
+      </td>
+
+      <td class="pagecell">
+        <div class="divweakmargin divmargintopsmall">
+          <h3 class="standout">Click on the map to switch pages!</h3>
+
+          <img src="images/Map_labeled.png" alt="A map of Narrabundah College." width="916" height="652" usemap="#Map"/>
+          <map name="Map">
+            <area shape="poly" coords="568,389,764,389,765,567,669,567,670,456,568,457" href="A_Block.html">
+            <area shape="poly" coords="67,113,310,114,311,207,66,206" href="B_Block.html">
+            <area shape="poly" coords="249,309,248,222,-1,221,-1,307" href="C_Block.html">
+            <area shape="poly" coords="104,324,308,325,309,414,103,415" href="D_Block.html">
+            <area shape="poly" coords="612,167,772,168,772,250,612,250" href="E_Block.html">
+            <area shape="poly" coords="431,139,577,139,577,211,431,212" href="F_Block.html">
+            <area shape="poly" coords="535,95,629,95,654,23,568,-7" href="L_Block.html">
+            <area shape="poly" coords="798,511,797,552,876,551,877,607,809,606,808,652,914,660,914,512" href="S_Block.html">
+          </map>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="pagecell topalign">
+        <div class="divweakmargin">
+          <img src="images/Logo_animation.gif" width="600" height="600" alt="An animated version of the Narrabundah College 2024 Logo.">
+
+          <div class="divweakmargin topalign">Praise the animation!</div>
+        </div>
+      </td>
+
+      <td class="pagecell topalign">
+        <table>
+          <tr>
+            <td colspan="5" class="iframeframe"><iframe src="images/iframe0.jpg" name="Gallery" title="Gallery" width="100%" height="100%"></iframe></td>
+          </tr>
+          <tr>
+            <td><a href="images/iframe1.jpg" target="Gallery"><img src="images/iframe1.jpg" width="148px" height="99px" class="iframepic" alt="An image to be displayed in the inline frame."/></a></td>
+            <td><a href="images/iframe2_imperfect.jpg" target="Gallery"><img src="images/iframe2_imperfect.jpg" width="148px" height="99px" class="iframepic" alt="An image to be displayed in the inline frame."/></a></td>
+            <td><a href="images/iframe3.jpg" target="Gallery"><img src="images/iframe3.jpg" width="148px" height="99px" class="iframepic" alt="An image to be displayed in the inline frame."/></a></td>
+            <td><a href="images/iframe4.jpg" target="Gallery"><img src="images/iframe4.jpg" width="148px" height="99px" class="iframepic" alt="An image to be displayed in the inline frame."/></a></td>
+            <td><a href="images/iframe5.jpg" target="Gallery"><img src="images/iframe5.jpg" width="148px" height="99px" class="iframepic" alt="An image to be displayed in the inline frame."/></a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+
+  <hr class="smallhr">
+
+  <div class="divmargin">
+    <form>  
+      <h1>Hello, this is a survey about my website. Please offer some constructive criticism so that I may improve it.</h1>
+
+      <p>Please give my website a rating of 0 to 10. <input type="number" min="0" max="10" required="required" name="rating"></p>
+
+      <p>Please enter your reason for this rating (optional). <input type="text" name="reason"></p>
+      
+      <p>Please tell me whether you consider functionality or aethetics more important.</p>
+      <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0">Functionality<br>
+      <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">Aesthetics<br>
+
+      <p>Please select all that apply.</p>
+      <ol>
+        <li><input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_0">Something you agree with<br></li>
+        <li><input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_1">Something you disagree with<br></li>
+        <li><input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_2">Something else you agree with<br></li>
+      </ol>
+
+      <p>Please tell me what you believe needs the most urgent attention at Narrabundah college. <input type="text" name="urgent_attention"></p>
+
+      <input type="submit"><br><br>
+    </form>
+
+    <form onsubmit="checkPassword(event)">
+      <h3>Here you can guess the password.</h3>
+
+      <input type="password" id="password">
+
+      <p id="response"></p>
+
+      <input type="submit">
+    </form>
+  </div>
+
+  <br><br>
+  <footer>
+    <a href="https://www.narrabundahc.act.edu.au/">Link to The official Narrabundah College Website</a>
+  </footer>  
+
+  <br><br>
+
+</body>
+</html>

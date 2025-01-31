@@ -1,0 +1,88 @@
+<!--  -->
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+  <title>Narrabundah College Block A</title>
+
+  <meta charset="UTF-8">
+  <meta name="author" content="B0redChungus">
+
+  <link id="style" type="text/css" rel="stylesheet" href="style/dark.css" />
+
+  <script>
+    function SwitchCss() { 
+        var CSS = document.getElementsByTagName('link')[0]; 
+
+        if (style.getAttribute('href') == 'style/dark.css') { 
+            style.setAttribute('href', 'style/style2.css'); 
+        } else { 
+            style.setAttribute('href', 'style/dark.css'); 
+        } 
+      }
+    </script>
+
+</head>
+
+<body>
+  <header>
+    <img src="images/not_so_crappy_banner.png" width="100%">
+  </header>
+
+  <table id="buttontable">
+    <tr>
+      <td class="buttoncell"><a href="Home.html" class='button'>Home</a></td>
+      <td class="buttoncell"><a href="B_Block.html" class='button'>Block B</a></td>
+      <td class="buttoncell"><a href="C_Block.html" class='button'>Block C</a></td>
+      <td class="buttoncell"><a href="D_Block.html" class='button'>Block D</a></td>
+      <td class="buttoncell"><a href="E_Block.html" class='button'>Block E</a></td>
+      <td class="buttoncell"><a href="F_Block.html" class='button'>Block F</a></td>
+      <td class="buttoncell"><a href="L_Block.html" class='button'>Block L</a></td>
+      <td class="buttoncell"><a href="S_Block.html" class='button'>Block S</a></td>
+      <td id="buttoncell"><a onclick="SwitchCss()" class='button'>Switch CSS</a></td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <table class="pagetable">
+    <tr>
+      <td class="pagecell">
+        <h1>A Block</h1>
+
+        <p>Located at the heart of Narrabundah College, A Block serves as the central hub for students and staff alike.</p> 
+        <p>Stepping into this bustling section of the campus, visitors are greeted by the welcoming 
+        ambiance of the front office, a vital administrative space where students receive guidance and support.</p> 
+        <p>Beyond the front office lies the tranquil sanctuary of the college library, a haven for knowledge 
+        seekers and avid readers. Here, students immerse themselves in a world of literature, research, and academic exploration. A Block stands as a symbol of connectivity 
+        sand learning, bridging administrative functions with intellectual pursuits, making it an indispensable cornerstone of the Narrabundah College community.</p>
+      </td>
+      <td class="pagecell">
+        <img src="images/Library.jpg" alt="An image of students studying in the library." width="800px" height="450px">
+      </td>
+    </tr>
+    <tr>
+      <td class="pagecell">
+        <img src="images/library2.jpg" alt="An image of students studying in the library.">
+      </td>
+      <td class="pagecell">
+        <h1>Still A Block</h1>
+
+        <p>Narrabundah College's A block stands as the nucleus of academic life, housing both the esteemed front office and the invaluable library. As the gateway to knowledge and administrative hub of the college, 
+          A block serves as a bustling center of activity, facilitating both the logistical operations and intellectual pursuits of students and faculty alike.</p>
+
+        <p>At the forefront of A block lies the front office, a beacon of guidance and support for the college community. Here, dedicated staff members greet visitors with warmth and professionalism, offering 
+          assistance with enrolment, timetabling, and various administrative tasks. Students find solace in the accessibility of the front office, knowing that their concerns and queries are met with attentiveness and care.</p>
+
+        <p>Adjacent to the front office, the library beckons with its shelves brimming with literary treasures and scholarly resources. A sanctuary for avid readers and diligent scholars, the library fosters an 
+          environment of quiet contemplation and academic exploration. From textbooks to novels, reference materials to digital databases, the library's extensive collection caters to the diverse interests and academic pursuits of students across disciplines.</p>
+
+        <p>Within the confines of A block, the symbiotic relationship between administration and academia flourishes, exemplifying Narrabundah College's commitment to holistic education. Whether seeking guidance 
+          from the front office or delving into the realms of knowledge within the library's walls, students and staff find themselves enriched by the invaluable resources and support offered by this central hub of learning and community engagement.</p>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

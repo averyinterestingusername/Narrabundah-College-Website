@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resizable TextInput</title>
+<style>
+    input {
+        min-width: 100px; /* Minimum width */
+    }
+</style>
+</head>
+<body>
+
+<input type="text" id="textInput" oninput="adjustWidth(this)" placeholder="Type here...">
+
+<script>
+function adjustWidth(input) {
+    // Set the threshold for resizing
+    var threshold = 5; // Change this as needed
+
+    // Calculate the width based on the content
+    var width = (input.value.length > threshold) ? input.value.length * 10 : 100; // Adjust this factor to fit your preference
+
+    // Apply the width
+    input.style.width = width + 'px';
+}
+</script>
+
+</body>
+</html>
