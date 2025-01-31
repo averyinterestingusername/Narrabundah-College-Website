@@ -12,4 +12,6 @@ The Home webpage also contains an animation of the college logo and an iFrame, w
 
 You can also switch the CSS styling if you prefer another one.
 
+Also the website is designed for a resolution of 1920 x 1080. (My laptop's resolution is lower, so it doesn't look as good. I could improve it by scaling to the current screen.)
+
 ### * _I_ think it looks good.
